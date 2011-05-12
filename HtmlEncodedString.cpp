@@ -282,8 +282,10 @@ static QString encodedEntity(const QChar& entity) {
 
 QString HtmlEncodedString::encodedString(const QString& text)
 {
+	int len = text.length();
 	QString result;
-	for (int i = 0; i < text.length(); i++) {
+	result.reserve(len);
+	for (int i = 0; i < len; i++) {
 		QChar c = text.at(i);
 		QString encoded = encodedEntity(c);
 		result.append(encoded);
