@@ -272,8 +272,8 @@ static bool operator<(const QTextHtmlEntity &entity, const quint16& code)
 
 static QString encodedEntity(const QChar& entity) {
 	quint16 code = entity.unicode();
-    const QTextHtmlEntity *start = &entities[0];
-    const QTextHtmlEntity *end = &entities[MAX_ENTITY];
+    static const QTextHtmlEntity *start = &entities[0];
+    static const QTextHtmlEntity *end = &entities[MAX_ENTITY];
     const QTextHtmlEntity *e = qBinaryFind(start, end, code);
     if (e == end)
         return entity;
