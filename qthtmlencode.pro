@@ -1,7 +1,7 @@
 TEMPLATE = lib
 
 CONFIG += staticlib
-TARGET = qthtmlencodedstring
+TARGET = qthtmlencode
 
 SOURCES += \
     htmlencodedstring.cpp
