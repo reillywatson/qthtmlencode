@@ -1,4 +1,7 @@
-#include "HtmlEncodedString.h"
+// Own includes
+#include "htmlencodedstring.h"
+
+// Qt includes
 #include <QChar>
 #include <QtAlgorithms>
 
