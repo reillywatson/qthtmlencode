@@ -1,3 +1,5 @@
+[![Qt Pods](http://qt-pods.org/assets/logo.png "Qt Pods")](http://qt-pods.org)
+
 # Usage
 HTML encode QStrings.  You can use it like so: HtmlEncodedString("mywackyunencodedinput"), or like so: HtmlEncodedString::encodeString("mywackyunencodedinput").
 
